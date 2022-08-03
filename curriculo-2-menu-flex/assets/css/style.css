@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,700&family=Roboto+Mono&family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400&display=swap');
+
+html, body {
+  background-color: white;
+  margin: 0px;
+  font-family: 'Roboto', sans-serif;
+  padding: 0px 50px;
+}
+
+header {
+  margin-top: 20px;
+  margin-bottom: 70px;
+  padding-bottom: 20px;
+  width: 100%;
+  display: flex;
+  /* background-color: yellow; */
+}
+
+.grow1 {
+  flex-grow: 1;
+}
+
+.nav-main {
+  padding: 0px 0px 10px 10px;
+  float:right;
+  flex-direction: row;
+}
+
+.nav-main ul {
+  list-style: none;
+  margin: 0px;
+}
+
+.nav-main ul li {
+  float: left;
+  position: relative;
+}
+
+.nav-main ul li a,
+.nav-main ul li a:visited {
+  float: left;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: bolder;
+  padding: 7px 10px;
+  color:#1976d2;
+  border-bottom: 1px solid #1976d2;
+}
+
+nav li a:hover,
+nav li a:active {
+  background-color: #1976d2;
+  color:white;
+  border-bottom: 1px solid #1976d2;
+  transition: all 0.3s linear;
+}
+
+#sobre-mim {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  
+}
+
+.card {
+  /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+  height: 40%;
+  width: 20%;
+  flex-grow: 1;
+  float: left;
+}
+
+figure {
+  margin: 0px;
+}
+
+figure > img {
+  width: 100%;
+}
+
+.card-info {
+  text-align: center;
+  padding: 2px 16px;
+}
+
+.card-info>h3 {
+  margin: 0;
+}
+
+.card-info>p {
+  margin: 0;
+}
+
+.sobre-mim-descricao {
+  flex-grow: 1;
+  float: right;
+  width: 80%;
+  float: left;
+  margin-left: 100px;
+}
+
+.sobre-mim-descricao h2 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.sobre-mim-descricao p {
+  padding-left: 40px;
+  background-color: #e3f2fd;
+}
+
+section {
+  
+  padding-bottom: 20px;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  width: 100%;
+  float: left;
+  border-bottom: 50px;
+}
+
+.box-info {
+  background-color: #e3f2fd;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+section h2 {
+  border: solid 1px black;
+  background-color: #1976d2;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.text-strong {
+  font-weight: bolder;
+}
+
+.text-sub {
+  vertical-align: sub;
+  font-size: smaller;
+}
+
+.text-under {
+  text-decoration: line-through;
+}
+
+#experiencias ul {
+  list-style: none;
+}
+
+#experiencias ul li {
+  padding: 8px;
+}
+
+
+
+#formacao table {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  border: 1px solid black;
+  
+}
+
+#formacao table th {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #42a5f5;
+  color: white;
+  text-align: left;
+}
+
+#formacao table td {
+  font-family: 'Roboto Mono', monospace;
+}
+
+
+footer {
+  width: 100%;
+  float:left;
+  margin-top: 0px;
+  border-top: 100px;
+}
+
+footer ul {
+  list-style: none;
+  align-items: center;
+}
+
+footer ul li {
+  display: inline;
+  padding: 20px 20px 10px 10px;
+}
+
+
+
+
