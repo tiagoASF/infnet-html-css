@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    height: auto;
+    float: left;
+}
+
+header {
+    position: relative;
+    margin-bottom: 80px;
+}
+
+#cover-text {
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+}
+
+#cover-text h1 {
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.short-text {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-style: italic;
+}
+
+#cover-figure img {
+    height: 100%;
+    width: 100%;
+    filter: brightness(0.50) opacity(0.80);
+}
+
+section {
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 70px;
+}
+
+.article-type {
+    position: absolute;
+    top: 400px;
+    left: 50%;
+    color: white;
+    font-weight: bolder;
+    background-color: #ff1744;
+    border: 5px 5px;
+    padding: 5px;
+}
+
+article p {
+    margin-bottom: 20px;
+    line-height: 1.6em;
+}
+
+.first-paragraph {
+    font-size: 1.2em;
+    padding-bottom: 10px;
+}
+
+.first-paragraph::first-letter {
+    font-size: 2.5em;
+    margin-right: 0.2em; 
+    margin-bottom: 0.1em;   
+    color:#ff1744;
+    float: left;
+}
+
+#in-article-img img {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+#cast h2 {
+    border-bottom: 1px black solid;
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+#cast {
+    text-align: left;
+}
+
+.card {
+    display:inline-block;
+    box-shadow: 0 0px 4px 0 rgba(0,0,0,0.2);
+    height: 40%;
+    width: 20%;
+    /* border: 1px black solid; */
+    margin-right: 30px;
+}
+  
+.card figure {
+    margin: 10px;
+  }
+  
+.card-figure  img {
+    width: 100%;
+    padding-top: 10px;
+  }
+  
+.card-info {
+    text-align: center;
+    padding: 2px 16px;
+}
+  
+.card-info h3 {
+    margin: 0;
+    font-size: 0.9em
+}
+
+.card-info p {
+    margin: 0;
+    font-size: 0.7em
+}
+
+#production h2 {
+    border-bottom: 1px black solid;
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+.production-card {
+    display:inline-block;
+    box-shadow: 0 0px 4px 0 rgba(0,0,0,0.2);
+    height: 40%;
+    width: 20%;
+    /* border: 1px black solid; */
+    margin-right: 30px;
+}
+  
+.production-card figure {
+    margin: 10px;
+  }
+  
+.production-card-figure  img {
+    width: 100%;
+    padding-top: 10px;
+  }
+  
+.production-card-info {
+    text-align: center;
+    padding: 2px 16px;
+}
+  
+.production-card-info h3 {
+    margin: 0;
+    font-size: 0.9em
+}
+
+.production-card-info p {
+    margin: 0;
+    font-size: 0.7em
+}
