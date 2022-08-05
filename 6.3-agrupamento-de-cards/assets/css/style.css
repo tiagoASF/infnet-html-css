@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+html {
+    background-color: #fff;
+}
+
+body {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5em;
+    margin-bottom: 1em;
+    margin-bottom: auto;
+    /* border: 1px solid black; */
+    background-image: linear-gradient(#90caf9, #fff);
+}
+
+header {
+    width: 100%;
+    padding-bottom: 3em;
+    text-align: center;
+    /* border: 1px solid black; */
+    
+}
+
+header > h1 {
+    font-size: 2em;
+    padding: 1em 5em 0.2em 5em;
+    opacity: 0.7;
+}
+
+header > p {
+    font-size: 0.9em;
+    padding-left: 5em;
+    padding-right: 5em;
+    opacity: 0.5;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    /* border: 1px solid black; */
+    margin-bottom: 5em;
+}  
+
+.card {
+    width: 15em;
+    height: auto;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    box-sizing: border-box;
+    
+}
+
+.card:hover {
+    background-image: linear-gradient(180deg,#fff, #90caf9);
+    opacity: 0.5;
+}
+
+
+
+.card img {
+    width: 90%;
+    padding: 0.7em;
+}
+
+.card-info {
+    text-align: center;
+}
+
+.post-header {
+    padding-top: 0.1em;
+    font-weight: 700;
+}
+
+.info {
+    padding: 0.5em 1em 1em 1em;
+}
+
+.info>p {
+    display: inline;
+    font-size: 0.7em;
+    font-weight: 300;
+}
+
+.release-date {
+    /* border-right: 0.1em #000 solid; */
+    padding-right: 0.5em;
+}
+
+.btn {
+    /* border: 1px solid black; */
+    display: block;
+    padding: 0.5em 1em;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    background-color: #1e88e5;
+    color: #fff;
+}
+
