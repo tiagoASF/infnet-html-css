@@ -1,0 +1,38 @@
+<svg width="600" height="524" viewBox="0 0 600 524" xmlns="http://www.w3.org/2000/svg"><title>mcdonalds-logo</title><path d="M431.2915 37.49c51.5867 0 93.4317 217.6384 93.4317 486.4207H600C600 234.538 524.059.2945 431.0701.2945 377.9336.2945 330.9963 70.479 300 180.7373 269.0037 70.479 222.0664.2945 169.3727.2945 76.3837.2945.6642 234.3166.6642 523.6893H75.941c0-268.7823 41.4022-486.1993 92.9889-486.1993s93.4317 201.0332 93.4317 449.0037h74.834c0-247.9705 42.0664-449.0037 93.6531-449.0037" fill="#FC0" fill-rule="nonzero"/><!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></svg>

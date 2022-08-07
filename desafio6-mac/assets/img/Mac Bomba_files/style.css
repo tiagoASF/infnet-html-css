@@ -19,7 +19,7 @@ header {
     align-items: center;
     /* border: 1px solid black; */
     background-color: white;
-    /* border: 1px solid black; */
+    border: 1px solid black;
 }
 
 .logo {
@@ -94,7 +94,7 @@ nav > ul > li > a:active {
     align-items: center;  
     justify-content: start;
     padding-bottom: 2em;
-    /* border: 1px solid black; */
+    border: 1px solid black;
 }
 
 .sanduiche-nome {
@@ -156,9 +156,8 @@ nav > ul > li > a:active {
 .acompanhamentos {
     width: 100%;
     height: auto;
-    padding-top: 4em;
-    padding-bottom: 5em;
-    /* border: 1px solid black; */
+    padding: 4em 1em 5em 1em;
+    border: 1px solid black;
 }
 
 .acompanhamentos > h2 {
@@ -176,7 +175,7 @@ nav > ul > li > a:active {
     flex-direction: row;
     justify-content: space-evenly;
     padding-top: 4em;
-    padding-right: 1em;
+    padding-right: 5em;
     padding-left: 1em;
 }
 
@@ -188,12 +187,12 @@ nav > ul > li > a:active {
 #tabela-nutricional {
     height: auto;
     /* background-color: blue; */
-    width: 60%;
+    width: 100%;
     padding-top: 5em;
     padding-bottom: 10em;
     margin-left: auto;
     margin-right: auto;
-    /* border: 1px solid black; */
+    border: 1px solid black;
 }
 
 
