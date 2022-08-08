@@ -71,7 +71,8 @@ input:focus {
     flex-direction: row;
     justify-content: space-evenly;
     padding-bottom: 5em;
-    border-bottom: #424242 solid 0.05em;
+    
+    margin-bottom: 5em;
 
 }
 
@@ -96,6 +97,8 @@ button:hover {
 
 .socialmedia-signup {
     padding-top: 1em;
+    margin-top: 5em;
+    border-top: #424242 solid 0.05em;
 }
 
 .socialmedia-signup i {
@@ -123,20 +126,22 @@ button:hover {
 .socialmedia-container a, a:hover, a:visited {
     text-decoration: none;
     color: #fff;
+    padding: 0;
 }
 
 .google {
-    padding: 0.7em 0.7em 0.7em 1em;
+    padding: 0.7em;
+    box-sizing: border-box;
     background-color:#ff5252;
     width: 100%;
-    margin-right: 1em;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
 .twitter {
-    padding: 0.7em 0.7em 0.7em 1em;
+    padding: 0.7em;
+    box-sizing: border-box;
     background-color: #1DA1F2;
     width:100%;
     display: flex;
@@ -145,7 +150,8 @@ button:hover {
 }
 
 .github {
-    padding: 0.7em 0.7em 0.7em 1em;
+    padding: 0.7em;
+    box-sizing: border-box;
     background-color: #333;
     width:100%;
     display: flex;
