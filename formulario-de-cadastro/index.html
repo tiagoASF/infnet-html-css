@@ -1,0 +1,71 @@
+<!-- Crie um formulário de cadastro de usuário utilizando o que foi aprendido em aula. Personalize com CSS. Ele precisa ter pelo menos 4 campos, username, e-mail, password e telefone -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://kit.fontawesome.com/4d9f49e58b.js" crossorigin="anonymous"></script>
+    <title>Signup Form</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Sign Up</h1>
+        <form>
+            <label for="nome">Nome</label>
+            <input type="text" placeholder="Nome" id="nome" name="nome" minlength="3" maxlength="60" required>
+            
+            <label for="email">E-mail</label>
+            <input type="email" placeholder="E-mail" maxlength="254" name="email" id="email" required>
+
+            <label>Password</label>
+            <input type="password" placeholder="Digite sua senha" minlength="8" maxlength="50" name="password" id="password" required>
+
+            <label>Confirme sua senha</label>
+            <input type="password" placeholder="Digite novamente a senha" minlength="8" maxlength="50" name="password-repeat" required>
+
+            <label for="telefone">Telefone</label>
+            <input type="tel" placeholder="Telefone" minlength="10" maxlength="15" name="telefone" id="telefone">
+
+            <label class="lembrar-de-mim">
+                <input type="checkbox" checked="checked" name="lembrar-de-mim">
+                Lembrar de mim
+            </label>
+
+            <p class="agreement">Eu li e concordo com os <a href="#">Termos e Políticas de Privacidade.</a></p>
+            <div class="btn-container">
+                <button type="button" class="btn-cancel">Cancelar</button>
+                <button type="submit" class="btn-submit">Cadastrar!</button>
+            </div>
+        </form>
+        <div class="socialmedia-signup">
+            <p>Or SignUp with Social Media</p>
+            <div class="socialmedia-container">
+                <a href="#">
+                    <div class="google">
+                        <i class="fa-brands fa-google"></i>
+                        <span>Sign up with Google</span>
+                    </div>
+                </a>
+                
+                <a href="#">
+                    <div class="twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                        <span>Sign up with Twitter</span>
+                    </div>
+                </a>
+
+                <a href="#">
+                    <div class="github">
+                        <i class="fa-brands fa-github"></i>
+                        <span>Sign up with Github</span>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
