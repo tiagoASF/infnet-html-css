@@ -7,7 +7,8 @@
 }
 
 body {
-    background-color: lightgray;
+    background-color: #00c853;
+    /* filter:blur(10px); */
 }
 
 .container {
@@ -16,15 +17,21 @@ body {
     height: 50%;
     display: flex;
     flex-direction: column;
-    /* transform: translate(50%, 50%); */
+    margin: auto;
     background-color: #fff;
     padding: 3em;
+    margin-top: 10em;
+    margin-bottom: 10em;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 1em;
     
 }
 
 h1 {
     text-align: center;
     padding-bottom: 2em;
+    color:#009624;
+    font-size: 2em;
 }
 
 form {
@@ -37,8 +44,13 @@ form {
 input {
     
     padding: 0.2em;
-    margin: 0.5em 0;
+    margin: 0em 0em 1em 0em;
     background-color: lightgray;
+}
+
+label {
+    font-size: 0.9em;
+    color:#27251F;
 }
 
 input:focus {
@@ -48,17 +60,19 @@ input:focus {
 .lembrar-de-mim {
     padding-top: 1em;
     font-size: 0.9em;
+    color:#27251F;
 }
 
 .agreement {
     padding-top: 2em;
     padding-bottom: 4em;
-    font-size: 0.8em;
+    font-size: 0.9em;
+    color: #27251F;
 }
 
 .agreement > a, .agreement > a:visited {
     text-decoration: none;
-    color: #448aff;
+    color: #009624;
     font-weight: 600;
 }
 
@@ -77,13 +91,15 @@ input:focus {
 }
 
 button {
-    background-color: #448aff;
+    background-color: #009624;
     color: #fff;
     border: none;
-    width: 30%;
+    width: 35%;
     box-sizing: border-box;
     cursor: pointer;
-    padding: 0.5em 0.5em;  
+    padding: .65em 0.45em;
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+    font-size: 1.1em;
 }
 
 button:hover {
@@ -98,7 +114,8 @@ button:hover {
 .socialmedia-signup {
     padding-top: 1em;
     margin-top: 5em;
-    border-top: #424242 solid 0.05em;
+    border-top: #27251F solid 0.05em;
+    color: #27251F;
 }
 
 .socialmedia-signup i {
@@ -129,34 +146,26 @@ button:hover {
     padding: 0;
 }
 
-.google {
-    padding: 0.7em;
+.social-link {
+    /* padding: 0.7em; */
+    padding: 0.7em 2em;
     box-sizing: border-box;
-    background-color:#ff5252;
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
+.google {
+    background-color:#ff5252;
+}
+
 .twitter {
-    padding: 0.7em;
-    box-sizing: border-box;
     background-color: #1DA1F2;
-    width:100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
 }
 
 .github {
-    padding: 0.7em;
-    box-sizing: border-box;
     background-color: #333;
-    width:100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
 }
 
 .socialmedia-container i {
