@@ -45,7 +45,7 @@ input {
     
     padding: 0.2em;
     margin: 0em 0em 1em 0em;
-    background-color: lightgray;
+    background-color: #fff;
 }
 
 label {
@@ -54,7 +54,7 @@ label {
 }
 
 input:focus {
-    background: grey;
+    background-color: #e8f5e9;
 }
 
 .lembrar-de-mim {
@@ -181,5 +181,19 @@ button:hover {
 .socialmedia-container a:hover {
     opacity: 0.8;
 }
+
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+}
+
+@media screen and (min-width: 481px) and (max-width:768px) {
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+}
+
 
 
