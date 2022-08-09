@@ -107,7 +107,7 @@ button:hover {
 }
 
 .btn-cancel {
-    background-color: #ff5252;
+    background-color: #d32f2f;
 }
 
 
@@ -184,11 +184,90 @@ button:hover {
 
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
+    .container {
+        width: auto;
+        height: 90%;
+        margin: 1em;
+        padding: 1em;
+    }
 
+    h1 {
+        padding-bottom: 1em;
+    }
+
+    .lembrar-de-mim {
+        font-size: 0.8em;
+    }
+    
+    .agreement {
+        padding-top: 1em;
+        padding-bottom: 2em;
+        font-size: 0.8em;
+    }
+    
+    .agreement > a, .agreement > a:visited {
+        text-decoration: none;
+        color: #009624;
+        font-weight: 600;
+    }
+
+    .btn-container {
+        padding-bottom: 2em;
+        margin-bottom: 0em;
+    }
+    
+    button {
+        padding: .2em 0.5em;
+        /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+        font-size: 1em;
+    }
+
+    .socialmedia-signup {
+        margin-top: 1em;
+        text-align: center;
+    }
+    
+    
+    .socialmedia-container {
+        flex-direction: column;
+    }
+    
+    .social-link {
+        /* padding: 0.7em; */
+        padding: 0.7em 2em;
+        flex-direction: row;
+        
+    }
 }
 
 @media screen and (min-width: 481px) and (max-width:768px) {
-
+    .container {
+        width: auto;
+        height: 90%;
+        margin: 1em;
+        padding: 1em;
+    }
+    
+    .socialmedia-signup {
+        margin-top: 1em;
+        text-align: center;
+    }
+    
+    .btn-container {
+        padding-bottom: 2em;
+        margin-bottom: 0em;
+    }
+    
+    .socialmedia-container {
+        flex-direction: column;
+    }
+    
+    .social-link {
+        /* padding: 0.7em; */
+        padding: 0.7em 2em;
+        flex-direction: row;
+        
+    }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
