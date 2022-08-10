@@ -78,7 +78,7 @@ header ul li a:active {
 ************************** */
 
 .sobre-mim {
-    padding: 1rem 2rem;
+    padding: 1rem 2rem 2rem 2rem;
     /* background-color: lightyellow; */
     display:flex;
     flex-direction: row;
@@ -112,7 +112,7 @@ header ul li a:active {
 ************************** */
 
 .habilidades {
-    padding: 3rem 2rem;
+    padding: 3rem 2rem 4rem 2rem;
     /* background-color: lightpink; */
     display: flex;
     flex-direction: row;
@@ -162,16 +162,62 @@ header ul li a:active {
 ************************** */
 
 .experiencias {
-    background-color: lightblue;
+    /* background-color: lightblue; */
     padding: 3rem 2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
+
+.experiencias ul {
+    list-style: none;
+}
+
+
+.experiencias ul:last-child {
+    align-self: flex-end;
+}
+
+
+
+.experiencias-lista {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-content:center;
+    width:45%;
+}
+
+.periodo, .funcao {
+    padding: 0.1rem 0.5rem;
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+.empresa a,
+.empresa a:visited  {
+    border: 1px solid #1a1b1f;
+    border-radius: 0.5rem;
+    padding: 0.1rem 0.7rem;
+    font-size: 0.9rem;
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+.empresa a:hover,
+.empresa a:active {
+    background-color: #1a1b1f;
+    color: #fff;
+    transition: all 0.2s linear;
+    opacity: 1;
+}
+
+
+
 .experiencias-descricao {
-    width: 60%;
-    padding-left: 5rem;
+    width: 55%;
+    padding-left: 2rem;
 }
 
 .experiencias-descricao h2 {
@@ -179,41 +225,15 @@ header ul li a:active {
     padding-bottom: 1.3rem;
 }
 
-.experiencias-lista {
-}
 
-.experiencias-lista  ul {
-    list-style: none;
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+/* 
+**************************
+******* EXPERIENCIAS ********
+************************** */
 
-.experiencias-lista a {
-    text-decoration: none;
-}
 
-.cargo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-}
 
-.cargo > span {
-    font-size: 0.9rem;
-    font-weight: 600;
-    padding-top: 1rem;
-}
 
-.cargo ul {
-    display: flex;
-    flex-direction: column;
-}
-
-.empresa {
-    font-size: 0.5rem;
-}
 
 
 
