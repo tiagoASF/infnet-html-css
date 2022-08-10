@@ -27,61 +27,96 @@ Utilize ícones do font-wesome ou do material design para personalizar os campos
 <body>
     <div class="container">
         <header>
-            <img src="./assets/img/homer-simpson3.png" alt="profile-pic">
+            <img src="./assets/img/homer-simpson4.jpg" alt="profile-pic">
             <div>
-                <p>Homer Simpson</p>
-                <p>Nuclear Safety Inspector</p>
+                <div>
+                    <p class="user-name">Homer Simpson</p>
+                    <p class="user-job">Nuclear Safety Inspector</p>
+                </div>
                 <form method="post">
                     <label for="img-profile">
                         <i class="fa-solid fa-camera">
                         </i>
                         Altere a foto do perfil
-                        
                     </label>
-                <input type="file" id="img-profile" name="img-profile" accept=".png, .jpg, .jpeg">
+                    <input type="file" id="img-profile" name="img-profile" accept=".png, .jpg, .jpeg">
                 </form>
             </div>
         </header>
+
         <form method="post">
-            <div>
-                <label for=""></label>
-                <input type="" id="" name="" value="">
-                <label for=""></label>
-                <input type="" id="" name="" value="">
-                <label for=""></label>
-                <input type="" id="" name="" value="">
-                <label for=""></label>
-                <input type="" id="" name="" value="">
-                <label for=""></label>
-                <input type="" id="" name="" value="">
+
+            <div class="personal-info">
+                <div class="name-email">
+                    <div class="name">
+                        <label for="username">Nome</label>
+                        <input type="text" id="username" name="username" value="Homer Simpson" required>
+                    </div>    
+                    <div class="email">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" value="chunkylover53@aol.com">
+                    </div>
+                </div>
+
+                <div class="gender-bio">
+
+                    
+                    <div class="gender">
+                        <p>Gênero</p>
+                        <div>
+                            <input type="radio" id="gender1" name="gender" checked>
+                            <label for="gender1">Masculino</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="gender2" name="gender">
+                            <label for="gender2">Feminino</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="gender3" name="gender">
+                            <label for="gender3">Não declarado</label>
+                        </div>
+                    </div>
+                    
+                    <div class="biography">
+                        <p><label for="biography">Sobre você</label></p>
+                        <textarea id="biography" name="biography" placeholder="Escreva poucas linhas sobre você"></textarea>
+                    </div>
+                </div>
             </div>
 
-            <div>
-                <div>
-                    <label>
+            <div class="socialmedia-info">
+                <div class="facebook">
+                    <label for="facebook">
                         <i class="fa-brands fa-facebook"></i>
                     </label>
-                    <input type="url" id="" name="" placeholder="">
+                    <input type="url" id="facebook" name="facebook" placeholder="Facebook">
                 </div>
-                <div>
-                    <label>
+                <div class="instagram">
+                    <label for="Instagram">
                         <i class="fa-brands fa-instagram"></i>
                     </label>
-                    <input type="url" id="" name="" placeholder="">
+                    <input type="url" id="instagram" name="instagram" placeholder="Instagram">
                 </div>
-                <div>
-                    <label>
+                <div class="github">
+                    <label for="GitHub">
                         <i class="fa-brands fa-github"></i>
                     </label>
-                    <input type="url" id="" name="" placeholder="">
+                    <input type="url" id="github" name="github" placeholder="GitHub">
                 </div>
-                <div>
-                    <label>
+                <div class="linkedin">
+                    <label for="linkedin">
                         <i class="fa-brands fa-linkedin"></i>
                     </label>
-                    <input type="url" id="" name="" placeholder="">
+                    <input type="url" id="linkedin" name="linkedin" placeholder="Linkedin">
                 </div>
             </div>
+
+            <button type="submit">Salvar alterações</button>
+
+            <!-- <div class="password">
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" value="********">
+            </div> -->
         </form>
 
     </div>

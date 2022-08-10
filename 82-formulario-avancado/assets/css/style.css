@@ -5,38 +5,442 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    
 }
 
 body {
-    background-color:lightgray;
+    background-color:#f8db27;
 }
 
 .container {
     background-color: #fff;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    width: 40vw;
-    height: 90vh;
+    width: 45vw;
     margin: 2rem auto; 
 }
 
 header {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    justify-content: left;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
 }
 
 header img {
     width: 8rem;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     border-radius: 100%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    /* padding: 1em; */
+    margin-left: 2rem;
 }
 
-header div {
-    border: 1px solid black;
+header > div {
+    /* border: 1px solid black; */
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+header p {
+    padding-bottom: 0.5rem;
+    padding-left: 3rem;
+    
+    
+}
+
+.user-name {
+    font-size: 1rem;
+    padding-top: 2.5rem;
+    font-weight: 600;
+    opacity: 0.7;
+}
+
+.user-job {
+ font-size: 0.8rem;
+ font-weight: 600;
+ opacity: 0.5;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+header label {
+    text-align: center;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+header label > i {
+    color: #2f64d6;
+    /* opacity: 1; */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.personal-info {
+    color: #34495e;
+    padding: 0rem 2rem 1rem 2rem;
+}
+
+.name-email {
+    width: 100%;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.name-email > div {
+    padding: 1rem;
+    width: 50%;
+}
+
+.name-email > div > label {
+    font-size: 0.8rem;
+}
+
+.name-email > div > input {
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+
+
+.gender-bio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+    padding-bottom: 2rem;
+}
+
+
+.gender {
+    font-size: 0.7rem;
+    padding-left: 1rem;
+    width: 50%;
+}
+
+.gender p {
+    padding-bottom: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.gender > div {
+    padding-bottom: 0.5rem;
+}
+
+.biography {
+    width:50%;
+    padding-left: 1rem;
+}
+
+.biography label {
+    font-size: 0.8rem;
+
+}
+
+.biography textarea {
+    height: 6rem;
+}
+
+.socialmedia-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-bottom: 2rem;
+}
+
+.socialmedia-info div {
+    padding-bottom: 1rem;
+    padding-left: 3rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.socialmedia-info div input {
+    width: 80%;
+    padding: 0.20rem 0rem;
+}
+
+.socialmedia-info div input[type=url]:focus {
+    
+    
+}
+
+.socialmedia-info i {
+    font-size: 1.5rem;
+    padding-right: 0.5rem;
+}
+
+.facebook {
+    color: #4267B2;
+}
+
+.facebook::placeholder {
+    color: #4267B2;
+}
+
+.instagram {
+    color: #C13584;
+}
+
+.linkedin {
+    color: #0A66C2;
+}
+
+.github {
+    color: #333;
+}
+
+button {
+    padding: 0.4rem 0.2rem;
+    width: 30%;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #2f64d6;
+    color: #fff;
+    border: transparent;
+    margin-bottom: 3rem;
+}
+
+button:hover, button:active {
+    background-color: #fff ;
+    color: #2f64d6;
+    cursor: pointer;
+
+}
+
+
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .container {
+        width: 95%;
+        margin: 1em;
+        padding: 1em;
+    }
+
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    header img {
+        width: 8rem;
+        border-radius: 100%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        margin-left: 0rem;
+    }
+    
+    header p {
+        padding-bottom: 0.5rem;
+        padding-left: 0rem;
+        text-align: center;
+    }
+    
+
+    header form {
+        padding-left: 0rem;
+        padding-top: 1rem;
+    }
+
+    .personal-info {
+        padding: 0;
+    }
+
+    .name-email {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .name-email > div {
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .name-email > div > label {
+        padding-right: 1rem;
+    }
+
+    .gender-bio {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    .gender {
+        font-size: 0.7rem;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 2rem;
+    }
+
+    .gender p {
+        font-weight: 600;
+    }
+    
+    .biography {
+        width:100%;
+        padding-left: 1rem;
+    }
+    
+    .biography label {
+        font-size: 0.8rem;
+    
+    }
+    
+    .biography textarea {
+        height: 6rem;
+        width: 100%;
+    }
+
+    .biography p {
+        font-weight: 600;
+    }
+    
+    button {
+        width: 60%;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 481px) and (max-width:768px) {
+    .container {
+        width: 95%;
+        margin: 1em;
+        padding: 1em;
+    }
+
+    header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    header img {
+        width: 8rem;
+        border-radius: 100%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        margin-left: 0rem;
+    }
+    
+    header p {
+        padding-bottom: 0.5rem;
+        padding-left: 0rem;
+        text-align: center;
+    }
+    
+
+    header form {
+        padding-left: 0rem;
+        padding-top: 1rem;
+    }
+
+    .personal-info {
+        padding: 0;
+    }
+
+    .name-email {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .name-email > div {
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .name-email > div > label {
+        padding-right: 1rem;
+    }
+
+    .gender-bio {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    .gender {
+        font-size: 0.7rem;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 2rem;
+    }
+
+    .gender p {
+        font-weight: 600;
+    }
+    
+    .biography {
+        width:100%;
+        padding-left: 1rem;
+    }
+    
+    .biography label {
+        font-size: 0.8rem;
+    
+    }
+    
+    .biography textarea {
+        height: 6rem;
+        width: 100%;
+    }
+
+    .biography p {
+        font-weight: 600;
+    }
+    
+    button {
+        width: 60%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
