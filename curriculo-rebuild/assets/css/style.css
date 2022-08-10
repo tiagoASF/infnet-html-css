@@ -228,35 +228,66 @@ header ul li a:active {
 
 /* 
 **************************
-******* EXPERIENCIAS ********
+******* FORMACAO ********
 ************************** */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .formacao {
-    height: 500px;
-    background-color: lightcoral;
+    /* background-color: lightcoral; */
+    padding: 3rem 2rem;
+     
 }
+
+.formacao > h2 {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* table, th, td {
+    border: none;
+} */
+
+table {
+    width: 90%;
+    margin: auto;
+}
+
+table > thead{
+}
+
+table > thead > tr > th {
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+}
+
+table > tbody> tr > td {
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .contato {
     height: 500px;
