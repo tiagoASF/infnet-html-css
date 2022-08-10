@@ -6,19 +6,24 @@
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
     color: #1a1b1f;
+}
+
+html, body {
     background-color: #eeeff1;
 }
 
 header {
+    position: sticky;
+    top: 0;
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 2rem;
-    border: 1px solid black;
+    padding: 1rem 2rem;
+    /* border: 1px solid black; */
 }
 
 header > div {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display:flex;
     flex-direction: row;
     align-items: center;
@@ -27,13 +32,13 @@ header > div {
 header > div > i {
     font-size: 1.7rem;
     padding-right: 1rem;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 
 }
 
 header > div > span {
     font-weight: 500;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 ul {
@@ -44,8 +49,89 @@ ul {
 }
 
 ul li {
-    padding: 1.5rem 1rem;
-
-    background-color: aquamarine;
+    margin: 1rem;
 }
+
+ul li a,
+ul li a:visited {
+    font-weight: 500;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    border-radius: 0.5rem; 
+}
+
+ul li a:hover,
+ul li a:active {
+    background-color: #1a1b1f;
+    color: #fff;
+    transition: all 0.3s linear;
+} 
+
+
+.sobre-mim {
+    padding: 1rem 2rem;
+    /* background-color: lightyellow; */
+    display:flex;
+    flex-direction: row;
+    justify-content:left;
+}
+
+.sobre-mim img {
+    width: 20rem;
+    height: auto;
+}
+
+.apresentacao {
+    width: 60%;
+    align-self:center;
+    padding-left: 2rem;
+    
+}
+
+.sobre-mim h2 {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.habilidades {
+    padding: 1rem 2rem;
+    height: 500px;
+    background-color: lightpink;
+}
+
+.experiencias {
+    height: 500px;
+    background-color: lightblue;
+}
+
+.formacao {
+    height: 500px;
+    background-color: lightcoral;
+}
+
+.contato {
+    height: 500px;
+    background-color: lightskyblue;
+}
+
+footer {
+    height: 200px;
+    background-color: greenyellow;
+}
+
+
+
 
