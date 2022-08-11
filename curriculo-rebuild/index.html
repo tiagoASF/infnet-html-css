@@ -123,21 +123,35 @@
             </tbody>
         </table>
     </section>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <section id="contato" class="contato"></section>
+<!--
+    formulario
+    - e-mail, telefone, título do assunto
+    a mensagem que ele deseja enviar para entrar em contato com você     
+    Por fim, crie links externos de redes sociais com ícones no footer do currículo -->
+    <section id="contato" class="contato">
+        <h2>Quer falar comigo?</h2>
+        <form>
+            <div class="informacoes-de-contato">
+                <input type="text" id="nome" name="nome" minlength="3" maxlength="30" placeholder="Nome" required>
+                <input type="email" id="email" name="email" placeholder="Endereço de e-mail para contato" maxlength=256 required>
+            </div>
+            <div class="mensagem-de-contato">
+                <input id="assunto" name="assunto" minlength="10" maxlength="50" placeholder="Assunto">
+                <textarea id="mensagem" name="mensagem" placeholder="Deixe aqui sua mensagem para mim!"></textarea>
+            </div>
+            <button type="submit">
+                <i class="fa-solid fa-paper-plane"></i>
+                Enviar
+            </button>
+        </form>
+    </section>
+
+
+
+
+
+
+
     <footer></footer>
 
 

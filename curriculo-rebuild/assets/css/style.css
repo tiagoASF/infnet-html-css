@@ -252,8 +252,6 @@ table {
     margin: auto;
 }
 
-table > thead{
-}
 
 table > thead > tr > th {
     font-size: 0.9rem;
@@ -263,36 +261,118 @@ table > thead > tr > th {
 table > tbody> tr > td {
     font-size: 0.9rem;
     text-align: center;
+    opacity: 0.7;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* 
+**************************
+******* CONTATO ********
+************************** */
 
 .contato {
-    height: 500px;
-    background-color: lightskyblue;
+    padding: 6rem 2rem 3rem 2rem;
+    /* background-color: lightskyblue; */
+    
+    width: 60%;
+    margin: auto;
 }
+
+.contato> h2 {
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+form ::placeholder {
+    color:#1a1b1f;
+    opacity: 0.5;
+    font-size: 0.9rem;
+    padding-left: 0.5rem;
+}
+
+input:focus {
+    outline: none;
+    border: solid 1px #1a1b1f;
+}
+
+input[type=email]:focus {
+    outline: none;
+    border: solid 1px #1a1b1f;
+}
+
+.informacoes-de-contato {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: stretch;
+}
+
+
+.informacoes-de-contato > input:first-child {
+    flex-grow: 2;
+    margin-right: 0.3rem;
+    border: 0px #1a1b1f solid;
+}
+
+.informacoes-de-contato > input:last-child {
+    flex-grow: 1;
+    border: 0px #1a1b1f solid;
+} 
+
+.mensagem-de-contato {
+    padding-top: 0.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.mensagem-de-contato > input {
+    margin-bottom: 0.3rem;
+    border: 0px #1a1b1f solid;
+}
+
+.mensagem-de-contato > textarea {
+    height: 10rem;
+    border: 0px #1a1b1f solid;
+}
+
+
+button {
+    box-sizing: border-box;
+    width: 20%;
+    margin: 2rem auto;
+    opacity: 0.8;
+}
+
+button:hover, button:hover > i {
+    background-color: #1a1b1f;
+    color: #fff;
+    transition: all 0.1s linear;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 footer {
     height: 200px;
