@@ -405,26 +405,56 @@ button:hover, button:hover > i {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* 
+**************************
+******* FOOTER ********
+************************** */
 
 footer {
-    height: 200px;
-    background-color: greenyellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1rem 2rem;
 }
+
+.credits span:first-child {
+    font-size: 0.8rem;
+    opacity: 0.8;
+    padding-right: 0.5rem;
+}
+
+.credits span:last-child {
+    font-weight: 600;
+    color: #4285F4;
+}
+
+a {
+    text-decoration: none;
+}
+
+a > i{
+    font-size: 2rem;
+    padding: 0.5rem;
+}
+
+.email > i{
+    color: #DB4437;
+}
+
+.whatsapp > i{
+    color: #25D366
+}
+
+.linkedin > i{
+    color: #0072b1
+}
+
+.github > i{
+    color: #1a1b1f
+}
+
+
+
 
 
 
