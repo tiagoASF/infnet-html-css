@@ -271,21 +271,33 @@ table > tbody> tr > td {
 
 .contato {
     padding: 6rem 2rem 3rem 2rem;
-    /* background-color: lightskyblue; */
-    
-    width: 60%;
-    margin: auto;
+    border: 1px solid #1a1b1f;
+    border-radius: 0.5rem;
+    width: auto;
+    margin: 7rem 2rem;
+    display:flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    max-height: 80vh;
 }
 
 .contato> h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     padding-bottom: 2rem;
+    width: 50%;
+}
+
+form label {
+    font-size: 0.8rem;
+    color:#1a1b1f;
+    opacity: 0.8;
 }
 
 form {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 50%;
 }
 
 form ::placeholder {
@@ -298,6 +310,7 @@ form ::placeholder {
 input:focus {
     outline: none;
     border: solid 1px #1a1b1f;
+    
 }
 
 input[type=email]:focus {
@@ -305,15 +318,37 @@ input[type=email]:focus {
     border: solid 1px #1a1b1f;
 }
 
+
 .informacoes-de-contato {
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content:stretch;
     align-items: stretch;
+    padding-bottom: 2rem;
 }
 
+.informacoes-de-contato > div {
+    display: flex;
+    flex-direction: column;
+}
 
-.informacoes-de-contato > input:first-child {
+.informacoes-de-contato  input {
+    padding: 1rem 0.5rem;
+    border: 0px #1a1b1f solid;
+    border-radius: 0.5rem;
+
+}
+
+.informacoes-de-contato > div:first-child {
+    width: 50%;
+    margin-right: 3rem;
+}
+
+.informacoes-de-contato > div:last-child {
+    width: 50%;
+}
+
+.informacoes-de-contato  input:first-child {
     flex-grow: 2;
     margin-right: 0.3rem;
     border: 0px #1a1b1f solid;
@@ -334,11 +369,14 @@ input[type=email]:focus {
 .mensagem-de-contato > input {
     margin-bottom: 0.3rem;
     border: 0px #1a1b1f solid;
+    padding: 1rem;
+    border-radius: 0.5rem;
 }
 
 .mensagem-de-contato > textarea {
-    height: 10rem;
+    height: 12rem;
     border: 0px #1a1b1f solid;
+    border-radius: 0.5rem;
 }
 
 
@@ -346,14 +384,23 @@ button {
     box-sizing: border-box;
     width: 20%;
     margin: 2rem auto;
-    opacity: 0.8;
+    border-radius: 0.5rem;
+    padding: 1rem 0.5rem;
+    background-color: #1a1b1f;
+    color: #fff;
+    border: none;
+}
+
+button > i {
+    background-color: #1a1b1f;
+    color: #fff;
 }
 
 button:hover, button:hover > i {
     background-color: #1a1b1f;
     color: #fff;
     transition: all 0.1s linear;
-    opacity: 1;
+    opacity: 0.8;
 }
 
 
