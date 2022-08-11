@@ -78,7 +78,7 @@ header ul li a:active {
 ************************** */
 
 .sobre-mim {
-    padding: 1rem 2rem 2rem 2rem;
+    padding: 2.5rem 2rem 2rem 2rem;
     /* background-color: lightyellow; */
     display:flex;
     flex-direction: row;
@@ -98,7 +98,7 @@ header ul li a:active {
     
 }
 .sobre-mim h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     padding-bottom: 2rem;
 }
 
@@ -124,7 +124,7 @@ header ul li a:active {
 }
 
 .habilidades-descricao > h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     padding-bottom: 1.3rem;
 }
 
@@ -135,7 +135,7 @@ header ul li a:active {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    padding-top: 3rem;
+    padding-top: 5rem;
     padding-left: 7rem;
     
 
@@ -163,7 +163,7 @@ header ul li a:active {
 
 .experiencias {
     /* background-color: lightblue; */
-    padding: 3rem 2rem;
+    padding: 4.5rem 2rem 3rem 2rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -216,12 +216,12 @@ header ul li a:active {
 
 
 .experiencias-descricao {
-    width: 55%;
+    width: 60%;
     padding-left: 2rem;
 }
 
 .experiencias-descricao h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     padding-bottom: 1.3rem;
 }
 
@@ -234,12 +234,12 @@ header ul li a:active {
 
 .formacao {
     /* background-color: lightcoral; */
-    padding: 3rem 2rem;
+    padding: 4.5rem 2rem 3rem 2rem;
      
 }
 
 .formacao > h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     padding-bottom: 2rem;
 }
 
