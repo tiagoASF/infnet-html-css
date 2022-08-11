@@ -10,6 +10,7 @@
 
 html, body {
     background-color: #eeeff1;
+    scroll-behavior: smooth;
 }
 
 /* 
@@ -458,8 +459,6 @@ a > i{
 .github > i{
     color: #1a1b1f
 }
-
-
 
 
 
