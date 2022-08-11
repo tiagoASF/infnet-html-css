@@ -311,13 +311,13 @@ form ::placeholder {
 
 input:focus {
     outline: none;
-    border: solid 1px #1a1b1f;
+    /* border: solid 1px #1a1b1f; */
     
 }
 
 input[type=email]:focus {
     outline: none;
-    border: solid 1px #1a1b1f;
+    /* border: solid 1px #1a1b1f; */
 }
 
 
@@ -379,8 +379,12 @@ input[type=email]:focus {
     height: 12rem;
     border: 0px #1a1b1f solid;
     border-radius: 0.5rem;
+    resize: none;
 }
 
+.mensagem-de-contato > textarea:focus {
+    outline: none;
+}
 
 button {
     box-sizing: border-box;
