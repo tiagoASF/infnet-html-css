@@ -45,7 +45,7 @@ header > div > i {
 }
 
 header > div > i:hover {
-    animation: spin 0.4s;
+    animation: flip 0.7s;
 }
 
 header > div > span {
@@ -440,13 +440,15 @@ footer {
 }
 
 .credits span:last-child {
+    
     font-weight: 600;
     color: #4285F4;
     
 }
-/* .credits span:last-child:hover {
-    animation: spin 5s;
-} */
+.credits span:last-child:hover {
+    display: inline-block;
+    animation: swing 1s;
+}
 
 a {
     text-decoration: none;
@@ -483,7 +485,7 @@ i:hover {
 
 
 /* ANIMACOES */
-@keyframes pulse {
+@keyframes my_pulse {
     0% {
         transform: scale(.50);
     }
@@ -510,7 +512,7 @@ i:hover {
     }
 }
 
-@keyframes spin {
+@keyframes my_spin {
     0% {
         transform:rotate(36deg);
     }
@@ -546,6 +548,10 @@ i:hover {
         transform:rotate(360deg);
         transform: scale(4) ;
     }
+}
+
+@keyframes teste {
+    
 }
 
 
