@@ -98,7 +98,7 @@ header ul li a:active {
 }
 
 .sobre-mim img:hover {
-    animation: my_pulse 0.2s;
+    animation: pulse 0.5s;
 }
 
 .apresentacao {
@@ -447,7 +447,7 @@ footer {
 }
 .credits span:last-child:hover {
     display: inline-block;
-    animation: jello 1s;
+    animation: rubberBand 1.0s;
 }
 
 a {
