@@ -85,6 +85,10 @@ nav > ul > li > a:active {
     padding-top:0.5em;
 }
 
+.pedido-telefone:hover {
+    animation: tada 1s;
+}
+
 
 .sanduiche {
     width:100%;
