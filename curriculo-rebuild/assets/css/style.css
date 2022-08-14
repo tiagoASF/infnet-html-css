@@ -44,6 +44,10 @@ header > div > i {
 
 }
 
+header > div > i:hover {
+    animation: spin 0.4s;
+}
+
 header > div > span {
     font-weight: 500;
     /* border: 1px solid black; */
@@ -91,6 +95,10 @@ header ul li a:active {
 .sobre-mim img {
     width: 20rem;
     height: auto;
+}
+
+.sobre-mim img:hover {
+    animation: pulse 0.2s;
 }
 
 .apresentacao {
@@ -412,6 +420,7 @@ button:hover, button:hover > i {
 
 
 
+
 /* 
 **************************
 ******* FOOTER ********
@@ -433,15 +442,25 @@ footer {
 .credits span:last-child {
     font-weight: 600;
     color: #4285F4;
+    
 }
+/* .credits span:last-child:hover {
+    animation: spin 5s;
+} */
 
 a {
     text-decoration: none;
 }
 
+
+
 a > i{
     font-size: 2rem;
     padding: 0.5rem;
+}
+
+i:hover {
+    animation: pulse 0.5s;
 }
 
 .email > i{
@@ -459,6 +478,82 @@ a > i{
 .github > i{
     color: #1a1b1f
 }
+
+
+
+
+/* ANIMACOES */
+@keyframes pulse {
+    0% {
+        transform: scale(.50);
+    }
+    25% {
+        transform: scale(.60);
+
+    }
+    50% {
+        transform: scale(.75);
+
+    }
+    75% {
+        transform: scale(.90);
+
+    }
+
+    80% {
+        transform: scale(1);
+        box-shadow: 0 0 0 50px rgba(#1a1b1f, 0);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(#1a1b1f, 0);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform:rotate(36deg);
+    }
+    10% {
+        transform:rotate(72deg);
+
+    }
+    20% {
+        transform:rotate(108deg);
+
+    }
+    30% {
+        transform:rotate(144deg);
+    }
+    40% {
+        transform:rotate(180deg);
+    }
+    50% {
+        transform:rotate(216deg);
+    }
+    60% {
+        transform:rotate(252deg);
+    }
+    70% {
+        transform:rotate(288deg);
+
+    }
+    80% {
+        transform:rotate(324deg);
+
+    }
+    90% {
+        transform:rotate(360deg);
+        transform: scale(4) ;
+    }
+}
+
+
+
+
+
+
+
 
 
 /* aparelho celular */
@@ -808,6 +903,9 @@ a > i{
 @media screen and (min-width:1400px) {
 
 }
+
+
+
 
 
 
