@@ -45,7 +45,7 @@ header > div > i {
 }
 
 header > div > i:hover {
-    animation: flip 0.7s;
+    animation: my_spin 0.8s;
 }
 
 header > div > span {
@@ -98,7 +98,7 @@ header ul li a:active {
 }
 
 .sobre-mim img:hover {
-    animation: pulse 0.2s;
+    animation: my_pulse 0.2s;
 }
 
 .apresentacao {
@@ -447,7 +447,7 @@ footer {
 }
 .credits span:last-child:hover {
     display: inline-block;
-    animation: swing 1s;
+    animation: jello 1s;
 }
 
 a {
@@ -550,9 +550,6 @@ i:hover {
     }
 }
 
-@keyframes teste {
-    
-}
 
 
 
