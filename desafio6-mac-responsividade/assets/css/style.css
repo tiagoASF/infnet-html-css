@@ -17,9 +17,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    /* border: 1px solid black; */
     background-color: white;
-    /* border: 1px solid black; */
 }
 
 .logo {
@@ -30,6 +28,10 @@ header {
 .logo > img {
     width: 100%;
     height: 3em;
+}
+
+.logo > img:hover {
+    animation: my_spin 0.5s;
 }
 
 nav > ul {
@@ -129,6 +131,10 @@ nav > ul > li > a:active {
     padding-bottom: 2em;
 }
 
+.sanduiche-informacoes > img:hover {
+    animation: flip 1.5s;
+}
+
 .sanduiche-ingredientes {
     color: #27251F;
     font-size: 0.8em;
@@ -143,6 +149,10 @@ nav > ul > li > a:active {
     font-weight: 200;
     font-size: 0.8em;
     
+}
+
+.calorias:hover {
+    animation: pulse 1s;
 }
 
 .calorias p {
@@ -183,6 +193,10 @@ nav > ul > li > a:active {
 .acompanhamentos-items > img {
     width: auto;
     height: 15em;
+}
+
+.acompanhamentos-items > img:hover {
+    animation: my_pulse 0.7s;
 }
 
 #tabela-nutricional {
@@ -245,6 +259,10 @@ footer {
     padding-left: 1em;
 }
 
+.download-on > img:hover {
+    animation: swing 1s;
+}
+
 .footer {
     display:flex;
     flex-direction: row;
@@ -291,12 +309,108 @@ footer {
     padding-right: 1em;
 }
 
+.logo-box img:hover {
+    animation: bounce 1s;
+}
+
 .logo-box span {
     font-size: 0.8em;
     color:#27251F;
     opacity: 0.8;
     
 }
+
+
+/* ANIMACOES */
+@keyframes my_pulse {
+    0% {
+        transform: scale(.50);
+    }
+    10% {
+        transform: scale(.55);
+
+    }
+    20% {
+        transform: scale(.60);
+    }
+    30% {
+        transform: scale(.65);
+
+    }
+    40% {
+        transform: scale(.70);
+
+    }
+    50% {
+        transform: scale(.75);
+
+    }
+    60% {
+        transform: scale(.80);
+
+    }
+    70% {
+        transform: scale(.85);
+
+    }
+    80% {
+        transform: scale(.90);
+
+    }
+    90% {
+        transform: scale(1);
+        
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes my_spin {
+    0% {
+        transform:rotate(36deg);
+    }
+    10% {
+        transform:rotate(72deg);
+
+    }
+    20% {
+        transform:rotate(108deg);
+
+    }
+    30% {
+        transform:rotate(144deg);
+    }
+    40% {
+        transform:rotate(180deg);
+    }
+    50% {
+        transform:rotate(216deg);
+        transform: scale(1.5);
+    }
+    60% {
+        transform:rotate(252deg);
+        transform: scale(2);
+    }
+    70% {
+        transform:rotate(288deg);
+        transform: scale(3);
+    }
+    80% {
+        transform:rotate(324deg);
+        transform: scale(3.5);
+    }
+    90% {
+        transform:rotate(360deg);
+        transform: scale(4) ;
+    }
+}
+
+
+
+
+
+
 
 
 @media screen and (min-width: 320px) and (max-width: 480px){
@@ -418,24 +532,15 @@ footer {
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-    
     .download-on {
         
         padding-top: 5em;
         justify-content:center;
         padding-right: 2em;
+    }
+
+    .download-on > img:hover {
+        animation: bounce 1s;
     }
     
     .footer {
@@ -456,7 +561,6 @@ footer {
         font-size: 0.7em;
     }
     
-    
     .logo-box img {
         height: 1em;
     }
@@ -465,12 +569,4 @@ footer {
         font-size: 0.7em;
     }
 
-
-
-
-
-
-    
-
-    
 }
